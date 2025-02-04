@@ -1,0 +1,488 @@
+body {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.top-bar {
+    background-color: rgb(156, 0, 0);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center; 
+    padding: 5px;
+    overflow: auto;
+}
+
+img {
+    height: 40px;
+    margin-left: 50px;
+}
+
+.divi {
+    margin-left: 35px; 
+    height: 80px;
+    border: 1px;
+    background-color: white;
+    width: 1px;
+}
+
+button.downloads {
+    background-color: rgb(150, 0, 0);
+    color: white;
+    font-family: 'Open Sans';
+    font-size: 20px;
+    border: none; 
+    cursor: pointer; 
+    padding: 10px 15px;
+    margin-left: auto; 
+}
+
+button.downloads:hover {
+    color: black;
+    background-color: white;
+}
+
+p {
+    padding: 25px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.barra-horizontal {
+    border: 1px;
+    background-color: white;
+    width: 500px;
+    height: 1px;
+    margin-left: 180px;
+}
+
+.pesquisa {
+    width: 3px;
+    height: 3px;
+    margin-bottom: 70px;
+    margin-right: 200px;
+}
+
+button.blog {
+    background-color: rgb(156, 0, 0);
+    color: white;
+    font-family: 'Open Sans';
+    font-size: 20px;
+    border: none; 
+    cursor: pointer; 
+    padding: 15px;
+    margin-left: auto;
+}
+
+button.blog:hover {
+    color: black;
+    background-color: white;
+}
+
+.divisoria {
+    border: 1px;
+    background-color: white;
+    width: 1px;
+    height: 50px;
+    margin: 0px 10px;
+}
+
+.aspas {
+    margin-left: 150px;
+    margin-top: 100px;
+}
+
+.texto {
+    margin-left: 270px;
+    margin-bottom: 250px;
+}
+
+.colorido {
+    color: red;
+}
+
+.destaque {
+    background-color: aliceblue;
+}
+
+h3 {
+    font-family: 'Courier New', Courier, monospace;
+    color: #707C8C;
+}
+
+.seta img {
+    max-width:35px;
+    max-height:35px;
+    width: auto;
+    height: auto;
+    margin: 0; 
+    padding: 0; 
+    border: 1px solid #707C8C;
+}
+
+.seta {
+    display: flex;
+    align-items: center; 
+    gap: 5px;
+}
+
+.traço {
+    border: 1px;
+    background-color: red;
+    width: 105px;
+    height: 8px;
+}
+
+.categorias {
+    color: #707C8C;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container {
+    color: red;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto;
+    gap: 45px;
+}
+
+.caixa1, .caixa2, .caixa3, .caixa4, .caixa5 {
+    border: 1px solid red;
+    padding: 5px;
+    align-content: center;
+    position: relative;
+}
+
+
+
+.direita {
+    margin-left: 800px;
+    color: #707C8C;
+}
+
+.container2 p {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+    font-size: x-large;
+    padding: 0;
+    margin-left: 50;
+}
+
+.container2 {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px;
+    justify-content: flex-start;
+    margin-left: 50px;
+    padding: 10px;
+    width: 90%;
+}
+
+.container2 img {
+    max-width: 250px;
+    max-height: 250px;
+    width: 100%; 
+    height: auto;
+    border: 1px solid #707C8C;
+    flex-shrink: 0;
+}
+
+.container2, .container3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    margin-left: 50px;
+    padding: 10px;
+    width: 45%;
+}
+
+.conteudo {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    max-width: 900px;
+}
+
+.galeria {
+    display: flex;
+    justify-content: center; 
+    gap: 10px; 
+}
+
+.imagem {
+    text-align: center; 
+}
+
+.legenda {
+    font-size: 14px;
+    color: #707C8C;
+    margin-top: 5px;
+    font-family: Arial, sans-serif;
+}
+
+.container3 img:first-child {
+    width: 350px;
+}
+
+.container3 img {
+    max-width: 250px;
+    max-height: 250px;
+    width: 100%; 
+    height: auto;
+    border: 1px solid #707C8C;
+    flex-shrink: 0;
+    margin-bottom: 20px;
+}
+
+
+.legenda1{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+    font-size: x-large;
+    padding: 0;
+    margin-left: 50px;
+
+}
+
+.imagem p{
+    font-size: 14px;
+    margin-top: 5px;
+    font-family: Arial, sans-serif;
+    color: #273644;
+   
+
+}
+.afasta{
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.post h3{
+    color: #1b252e;
+    font-size: 17px;
+    font-weight: bold;
+
+}
+.ultpost{
+    color: #8D9AA6;
+}
+
+.aolado{
+    margin-left: 800px;
+}
+.seriePost h3{
+       color: black;
+
+}
+.seriePost p{
+    color: #8D9AA6;
+    font-size: 12px;
+    margin-bottom: 500px;
+}
+
+.container4, .container5, .container6, .container7{
+    border: 1px solid red;
+    width: 180px;
+    height: 150px;
+}
+
+.seriePost div {
+    margin-top: 10px; 
+}
+
+.seriePost {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; 
+}
+
+
+.aolado {
+    margin-bottom: 0;
+}
+body, h3 {
+    margin: 0;
+}
+.seriePost {
+    margin-top: -20px; 
+    padding-top: 0; 
+}
+
+
+.seriePost {
+    position: relative;
+    top: -20px; 
+}
+
+.seriePost p {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.caixasV {
+    display: flex;
+    gap: 80px;
+    align-items: center;
+    justify-content: center;
+}
+
+.traço-horizontal {
+    width: 70%;
+    background-color: red;
+    height: 1px;
+    margin-left: 25px;
+}
+
+.container4,
+.container5,
+.container6,
+.container7 p{
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+   
+    
+       
+}
+
+.container4 p {
+    color: red;
+}
+.pmaior {
+    
+    text-decoration: solid;
+    font-style: italic;
+    font-size: x-large;
+    font-weight: bold;
+}
+.pcinza{
+    color: gray !important;
+}
+
+.container5 p{
+   color: red;
+   
+}
+
+.pmaior2 {
+    
+    text-decoration: solid;
+    font-style: italic;
+    font-size: x-large;
+    font-weight: bold;
+
+}
+
+.traço-horizontal2{
+    width: 70%;
+    background-color: red;
+    height: 1px;
+    margin-left: 25px;
+    margin-top: 52px !important;
+}
+
+.pcinza2{
+    color: gray !important;
+}
+
+.container6 p{
+    color: red;
+}
+.pmaior3{
+    
+    text-decoration: solid;
+    font-style: italic;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.traço-horizontal3{
+    width: 70%;
+    background-color: red;
+    height: 1px;
+    margin-left: 25px;
+    margin-top: 52px !important;
+}
+
+.pcinza3{
+    color: gray !important;
+}
+
+.container7 p{
+    color: red;
+}
+
+.traço-horizontal4{
+    width: 70%;
+    background-color: red;
+    height: 1px;
+    margin-left: 25px;
+    margin-top: 37px !important;
+
+}
+
+.pcinza4{
+    color: gray !important;
+}
+
+.pmaior4{
+    
+    text-decoration: solid;
+    font-style: italic;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+footer{
+    margin-top: 150px;
+    color: red;
+    overflow: auto;
+}
+
+.traço-horizontal5{
+    width: 35px;
+    background-color: red;
+    height: 1px;
+    margin-left: 75px;
+    margin-top: 5px;
+
+}
+footer p{
+    margin-top: -15px;
+    margin-left: 25px;
+    justify-content: space-between;
+
+}
+
+.liberdade{
+    position: absolute;
+    bottom: -1920px; 
+    right: 10px; 
+    display: grid;
+    gap: 1px; 
+   
+
+}
+
+.liberdade button {
+    padding: 10px 20px;
+    border: none;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    font-size: 15px;
+    margin-left: 900px;
+}
+
+.liberdade button:hover {
+    background-color: rgb(214, 214, 214);
+}
