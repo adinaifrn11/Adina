@@ -4,44 +4,49 @@
     box-sizing: border-box;
 }
 
-/* BODY sem display flex em coluna, pois usaremos sidebars fixas */
 body {
     font-family: Arial, sans-serif;
     background: #ecf0f1;
 }
 
-/* SIDEBAR ESQUERDA *//*MAIS ALGOPARA COMITAR*/
+/*Comentário para um commit aleatorio*/
 .sidebar {
     width: 250px;
     background: white;
     color: blue;
     padding: 20px;
-    position: fixed; /* Fixa na tela */
+    position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
-    overflow-y: auto; /* Caso precise rolagem */
+    overflow-y: auto;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
+
 .sidebar ul li.active {
     background: blue;
     color: white;
 }
+
 .sidebar h2 {
     text-align: center;
 }
+
 .sidebar ul {
     list-style: none;
 }
+
 .sidebar ul li {
     padding: 10px;
     cursor: pointer;
     margin-top: 30px;
 }
+
 .sidebar ul li:hover {
     background: blue;
     color: white;
 }
+
 /* SIDEBAR DIREITA */
 .sidebar2 {
     width: 300px;
@@ -51,16 +56,16 @@ body {
     top: 0;
     bottom: 0;
     right: 0;
-    overflow-y: auto; 
+    overflow-y: auto;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
 /* CONTEÚDO CENTRAL */
 .content {
-    margin-left: 250px; 
-    margin-right: 300px; 
+    margin-left: 250px;
+    margin-right: 300px;
     padding: 20px;
-    min-height: 100vh; 
+    min-height: 100vh;
     background: #ecf0f1;
 }
 
@@ -73,6 +78,7 @@ header {
     padding: 10px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
+
 .btn-suspender {
     background: #e74c3c;
     color: white;
@@ -83,6 +89,7 @@ header {
     align-items: center;
     gap: 5px;
 }
+
 .btn-suspender:hover {
     background: #c0392b;
 }
@@ -93,6 +100,7 @@ header {
     gap: 20px;
     margin: 20px 0;
 }
+
 .card {
     background: white;
     padding: 20px;
@@ -100,6 +108,7 @@ header {
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
+
 .card p {
     font-weight: bold;
     font-size: 1.5em;
@@ -111,10 +120,12 @@ header {
     gap: 10px;
     margin-bottom: 20px;
 }
+
 .botoesIn h2 {
     width: 100%;
     margin-bottom: 10px;
 }
+
 .botoesIn button {
     background: white;
     color: blue;
@@ -129,71 +140,146 @@ header {
     border-radius: 10%;
     text-align: center;
 }
+
 .botoesIn button:hover {
     background: #2980b9;
     color: white;
 }
+
 .botoesIn .botao1 {
-    background-image: url('file-text.png');
-    background-repeat: no-repeat;
-    background-position: 58px 12px;
+    background-color: white;
+    color: #2980b9;
+    border: 1px solid #2980b9;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
-.botoesIn .botao1:hover {
-    background-image: url('Icon.png');
-    background-position: top;
-    background-repeat: no-repeat;
+
+.botoesIn .botao1 img.icone {
+    width: 35px;
+    height: 35px;
+    transition: filter 0.1s;
 }
+
+.botoesIn .botao1:hover img.icone {
+    filter: brightness(0) invert(1);
+}
+/*botão 1 com hover*/
 .botoesIn .botao2 {
-    background-image: url('Icon\ \(1\).png');
-    background-repeat: no-repeat;
-    background-position: 58px 12px;
+    background-color: white;
+    color: #2980b9;
+    border: 1px solid #2980b9;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
-.botoesIn .botao2:hover {
-    background-image: url('Icon.png');
-    background-position: top;
-    background-repeat: no-repeat;
+/*botão 2 com hover*/
+.botoesIn .botao2 img.icone {
+    width: 35px;
+    height: 35px;
+    transition: filter 0.1s;
 }
+
+.botoesIn .botao2:hover img.icone {
+    filter: brightness(0) invert(1);
+}
+
+/*botão 3 com hover*/
 .botoesIn .botao3 {
-    background-image: url('Icon\ \(3\).png');
-    background-repeat: no-repeat;
-    background-position: 58px 12px;
+    background-color: white;
+    color: #2980b9;
+    border: 1px solid #2980b9;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
-.botoesIn .botao3:hover {
-    background-image: url('Icon.png');
-    background-position: top;
-    background-repeat: no-repeat;
+
+.botoesIn .botao3 img.icone {
+    width: 35px;
+    height: 35px;
+    transition: filter 0.1s;
 }
+
+.botoesIn .botao3:hover img.icone {
+    filter: brightness(0) invert(1);
+}
+/*botão 4 com hover*/
 .botoesIn .botao4 {
-    background-image: url('Icon\ \(4\).png');
-    background-repeat: no-repeat;
-    background-position: 58px 12px;
+    background-color: white;
+    color: #2980b9;
+    border: 1px solid #2980b9;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
-.botoesIn .botao4:hover {
-    background-image: url('Icon.png');
-    background-position: top;
-    background-repeat: no-repeat;
+
+.botoesIn .botao4 img.icone {
+    width: 35px;
+    height: 35px;
+    transition: filter 0.1s;
 }
+
+.botoesIn .botao4:hover img.icone {
+    filter: brightness(0) invert(1);
+}
+/*botão 5 com hover*/
 .botoesIn .botao5 {
-    background-image: url('Icon\ \(5\).png');
-    background-repeat: no-repeat;
-    background-position: 58px 12px;
+    background-color: white;
+    color: #2980b9;
+    border: 1px solid #2980b9;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
-.botoesIn .botao5:hover {
-    background-image: url('Icon.png');
-    background-position: top;
-    background-repeat: no-repeat;
+
+.botoesIn .botao5 img.icone {
+    width: 35px;
+    height: 35px;
+    transition: filter 0.1s;
 }
+
+.botoesIn .botao5:hover img.icone {
+    filter: brightness(0) invert(1);
+}
+
+/*botão 6 com hover*/
 .botoesIn .botao6 {
-    background-image: url('plus-circle.png');
-    background-repeat: no-repeat;
-    background-position: 58px 12px;
-    border: 1px dashed #5d9fe2;
+    background-color: white;
+    color: #2980b9;
+    border: 1px dashed #2980b9;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
-.botoesIn .botao6:hover {
-    background-image: url('Icon.png');
-    background-position: top;
-    background-repeat: no-repeat;
+
+.botoesIn .botao6 img.icone {
+    width: 35px;
+    height: 35px;
+    transition: filter 0.1s;
 }
+
+.botoesIn .botao6:hover img.icone {
+    filter: brightness(0) invert(1);
+}
+
 .inscricoes table {
     width: 100%;
     background: white;
@@ -201,12 +287,14 @@ header {
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
     border-collapse: collapse;
 }
+
 .inscricoes th,
 .inscricoes td {
     padding: 10px;
     border-bottom: 1px solid #ccc;
     text-align: left;
 }
+
 .inscricoes th {
     background: #3498DB;
     color: white;
@@ -219,11 +307,13 @@ header {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
 }
+
 .grafico {
     background: #f4f4f4;
     padding: 10px;
     border-radius: 8px;
 }
+
 .barra {
     background: #3498DB;
     color: white;
@@ -238,6 +328,7 @@ header {
     border-radius: 8px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
+
 .pendencias button {
     margin: 5px;
     padding: 10px 15px;
@@ -246,15 +337,19 @@ header {
     cursor: pointer;
     transition: 0.3s;
 }
+
 .pendencias button:hover {
     background-color: #ddd;
 }
+
 .content span {
     color: #2E96C9;
 }
+
 .content h3 {
     color: #2E96C9;
 }
+
 .menu-item {
     display: flex;
     align-items: center;
@@ -264,19 +359,23 @@ header {
     border-radius: 5px;
     cursor: pointer;
 }
+
 .menu-item.active {
     background: #007bff;
     color: white;
 }
+
 .icon {
     margin-right: 10px;
 }
+
 .activity {
     margin-top: 20px;
     padding: 10px;
     background: #f9f9f9;
     border-radius: 5px;
 }
+
 .date {
     font-size: 12px;
     color: gray;
@@ -289,10 +388,11 @@ header {
     padding: 15px;
     border-radius: 5px;
     width: 90%;
-    margin: 30px auto; 
-    
+    margin: 30px auto;
+
 }
-header p{
+
+header p {
     text-align: start;
     justify-content: flex-start;
     display: inline;
@@ -302,29 +402,35 @@ header p{
 .inscricoes {
     width: 50%;
 }
+
 h3 {
     font-size: 16px;
     margin-bottom: 10px;
 }
+
 h3 span {
     font-weight: normal;
 }
+
 h3 a {
     font-size: 14px;
     float: right;
     color: #007bff;
     text-decoration: none;
 }
+
 ul {
     list-style: none;
     padding: 0;
 }
+
 li {
     display: flex;
     align-items: center;
     font-size: 14px;
     margin: 5px 0;
 }
+
 .status {
     width: 10px;
     height: 10px;
@@ -332,10 +438,12 @@ li {
     display: inline-block;
     margin-right: 8px;
 }
-.verde { 
-    background: green; 
+
+.verde {
+    background: green;
 }
-.cinza2 { 
+
+.cinza2 {
     display: flex;
     padding: 0px 10px;
     justify-content: center;
@@ -344,35 +452,43 @@ li {
     align-self: stretch;
     background-color: rgb(219, 219, 219);
 }
-.cinza2 p{
+
+.cinza2 p {
     color: black;
 }
-.cinza2 span{
+
+.cinza2 span {
     color: black;
 }
+
 .cinza {
     background-color: lightgray;
-    
+
 }
-.cinza3{
+
+.cinza3 {
     background-color: lightgray;
 }
 
 .estatisticas {
     width: 50%;
 }
-.estatisticas h3{
+
+.estatisticas h3 {
     gap: 10px;
     padding: 10px;
     color: black;
 }
+
 .barras {
     display: flex;
-    
+
 }
+
 .barras .cinza2 span {
     color: black;
 }
+
 .barra {
     text-align: center;
     border-radius: 5px;
@@ -380,6 +496,7 @@ li {
     font-weight: bold;
     flex-direction: column;
 }
+
 .barra span {
     font-size: 12px;
     color: white;
@@ -388,6 +505,7 @@ li {
     text-align: center;
     justify-content: center;
 }
+
 .azul {
     background: #3399ff;
     width: 90px;
@@ -398,9 +516,9 @@ li {
     align-items: center;
     flex: 1 0 0;
     align-self: stretch;
-    
+
 }
-.azul2{
+.azul2 {
     background-color: #3399ff;
 }
 .azul-claro {
@@ -413,7 +531,7 @@ li {
     flex: 1 0 0;
     align-self: stretch;
 }
-.azul-claro2{
+.azul-claro2 {
     background-color: #66ccff;
 }
 .legenda {
@@ -432,7 +550,7 @@ li {
     border-radius: 50%;
     margin-right: 5px;
 }
-.barras p{
+.barras p {
     text-align: center;
     justify-content: center;
     font-size: x-large;
@@ -447,6 +565,49 @@ li {
     padding: 10px 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+.active-account {
+    display: inline-flex;
+    border: 1px solid #2980b9;
+    align-items: center;
+    gap: 8px;
+    font-family: sans-serif;
+}
+.barracount{
+    display: flex;           
+    gap: 10px;               
+  }
+.avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: conic-gradient(orange 0deg 60deg,
+            #eee 20deg 360deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bolinha {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: purple;
+}
+
+.nomedeusuario {
+    font-size: 14px;
+    color: #2c3e50;
+}
+
+.flechinha {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid #2c3e50;
+
+}
 
 .info {
     display: flex;
@@ -455,11 +616,13 @@ li {
     text-align: start;
     flex-direction: column;
 }
+
 .info span {
     margin-right: 100px;
     color: #555;
     font-size: large;
 }
+
 .edit {
     background-color: #eaf2ff;
     color: #555;
@@ -469,25 +632,34 @@ li {
     cursor: pointer;
     font-size: 14px;
 }
+
 .edit:hover {
     background-color: #d0e0ff;
 }
-.info h3{
+
+.info h3 {
     color: black;
     font-weight: bold;
     font-size: xx-large;
     text-align: left;
 }
+
 .sidebar2 button {
     background-color: #f60;
     color: white;
+    padding: 0;
+    display: flex;
 }
-.sidebar2 button span{
+
+.sidebar2 button span {
     justify-content: center;
     align-items: center;
     flex: 1 0 0;
     align-self: stretch;
 }
-.sidebar2 button:hover{
+
+.sidebar2 button:hover {
     background-color: #FD8535;
 }
+
+ 
